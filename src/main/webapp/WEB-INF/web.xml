@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+	<display-name>Hello World Servlet Application</display-name>
+
+	<servlet>
+		<servlet-name>helloWorldServlet</servlet-name>
+		<servlet-class>com.learning.user.controller.HelloWorld</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>userControllerServlet</servlet-name>
+		<servlet-class>com.learning.user.controller.UserController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>learningJavaServlet</servlet-name>
+		<servlet-class>com.learning.user.controller.LearningJava</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>helloWorldServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>userControllerServlet</servlet-name>
+		<url-pattern>/createUser.htm</url-pattern>
+		<url-pattern>/saveUser.htm</url-pattern>
+		<url-pattern>/searchUser.htm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>learningJavaServlet</servlet-name>
+		<url-pattern>/learn</url-pattern>
+	</servlet-mapping>
+
+</web-app>
