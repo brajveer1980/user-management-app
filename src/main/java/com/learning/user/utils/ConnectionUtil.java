@@ -20,7 +20,7 @@ public class ConnectionUtil {
 			// create a database connection
 			// connection =
 			// DriverManager.getConnection("jdbc:sqlite:sample.db");
-			connection = DriverManager.getConnection("jdbc:sqlite:D:/Development/sqllite/test.db");
+			connection = DriverManager.getConnection("jdbc:sqlite:/home/braj/Dev/db/sqllite/test.db");
 			if (connection != null) {
 				System.out.println("Connection created sucessfully.");
 			}
